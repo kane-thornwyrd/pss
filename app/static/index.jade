@@ -1,0 +1,61 @@
+doctype html
+html
+  head
+    script(src="js/vendors.js")
+    script(src="js/app.js")
+    meta(charset="utf-8")
+    title Partner Skill Summary
+    link(rel="stylesheet", href="css/app.css")
+  body
+    h1 Partner Skill Summary
+      button.refresh Refresh
+    textarea#resume.yaml(autofocus)
+      |---
+      |name: John Smith
+      |job: JS Guru
+      |summary:
+      |  formation:
+      |    Super school :
+      |      - Software Engineering
+      |    Langues :
+      |      - TOEIC 990/990
+      |  keySkills:
+      |    Langages:
+      |      - JS, PHP, Brainfuck
+      |    Frameworks:
+      |      - Backbone, Mocha + CHai
+      |    Foo:
+      |      - bar
+      |  passionsMotivations:
+      |    Mes Passions:
+      |      - Faire des trucs de dingue
+      |      - Faire des trucs de dingue 2
+      |      - Faire des trucs de dingue 3
+      |    Mes Motivations:
+      |      - Faire des trucs de Cool
+      |      - Faire des trucs haute responsabilité
+      |      - Faire des trucs partage
+      |  shortResume:
+      |    Expérience professionelle :
+      |     - 6 ans
+      |    super ent. - 1 an  :
+      |     - Faire des trucs de dingue
+      |    super ent.2 - 5 ans :
+      |     - Faire des trucs de dingue
+      |historic:
+      | - company: Cool Comp.
+      |   job: JS Senior Dev.
+      |   date: 2016 (6months)
+      |   content:
+      |     Contexte:
+      |       - awesome stuff
+      |     Missions Réalisées:
+      |       - killer feature <ul> <li>killer feature 1</li> <li>killer feature 1</li> <li>killer feature 1</li> <li>killer feature 1</li> </ul>
+      |       - killer feature 2
+      |       - killer feature 3
+      |     Environnement:
+      |       - Linux, Mac OS
+    #pdf
+      iframe(data-type="pdf-preview")
+      h1 ⏷ PDF Source ⏷
+    script require('application').init();

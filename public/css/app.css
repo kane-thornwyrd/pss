@@ -1,0 +1,189 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  color: #595959;
+  font-family: Calibri, Carlito, sans-serif;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.5em 0 1em;
+}
+#resume {
+  text-align: left;
+  display: block;
+  max-width: 960px;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 1em rgba(0,0,0,0.2);
+  box-shadow: 0 0 1em rgba(0,0,0,0.2);
+}
+#pdf {
+  background: #555;
+  width: 100%;
+  padding: 1em;
+  -webkit-box-shadow: 0 0 1em #000 inset;
+  box-shadow: 0 0 1em #000 inset;
+}
+#pdf h1 {
+  text-align: center;
+}
+#pdf > * {
+  overflow: hidden;
+  display: block;
+  position: relative;
+  width: 960px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 1em rgba(0,0,0,0.5);
+  box-shadow: 0 0 1em rgba(0,0,0,0.5);
+  margin: 1em auto;
+}
+#pdf [data-type="pdf-preview"] {
+  padding: 0;
+  border: none;
+  height: 679px;
+}
+#pdf .page {
+  height: 679px;
+  padding: 1em 2em;
+}
+#pdf .page header .logo {
+  height: 3em;
+  display: inline;
+  position: relative;
+}
+#pdf .page header .candidate {
+  display: inline;
+  float: right;
+  font-variant: small-caps;
+  font-size: 1.5em;
+  margin: 0;
+}
+#pdf .page footer {
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  text-align: center;
+  border-top: 3px solid #31668e;
+  width: 60%;
+  margin: auto;
+  font-size: 1em;
+}
+#pdf .page footer p {
+  margin: 0;
+  padding: 0;
+  padding-top: 0.5em;
+}
+#pdf .page footer p:last-child {
+  position: relative;
+  top: -1.2em;
+}
+#pdf .page footer img {
+  width: 2em;
+  display: inline;
+  position: relative;
+  top: 0.5em;
+  margin: 0 1em;
+}
+.cover h2 {
+  display: block;
+  width: 50%;
+  margin: auto;
+  margin-top: 4em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #31668e;
+}
+.cover>p {
+  text-align: center;
+  font-variant: small-caps;
+  font-size: 1.5em;
+}
+.cover .logo img {
+  width: 15em;
+}
+.cover .logo .hashtag {
+  font-size: 1.3em;
+  margin-left: 2em;
+  font-variant: small-caps;
+  font-weight: bold;
+  color: #31668e;
+}
+.summary>.section {
+  width: 48.2%;
+  padding: 0;
+  margin: 0.5em;
+  padding: 1em;
+  height: 38.3%;
+  float: left;
+  border: 1px solid #31668e;
+  z-index: 1;
+}
+.summary>.section:nth-of-type(even) {
+  padding-left: 10em;
+}
+.summary>.section:nth-of-type(odd) {
+  padding-right: 10em;
+}
+.summary>.section dt {
+  font-weight: bold;
+  color: #31668e;
+}
+.summary>.section dd {
+  margin-left: 1em;
+}
+.summary .wheel {
+  position: absolute;
+  top: 28%;
+  left: 35%;
+  width: 30%;
+  float: left;
+  z-index: 100;
+}
+.summary .picto {
+  position: absolute;
+  top: 38%;
+  left: 43%;
+  width: 15%;
+  z-index: 101;
+}
+.historic-entry .mini-header {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  border-bottom: 1px solid #595959;
+  height: 0.5em;
+}
+.historic-entry .mini-header td {
+  text-align: center;
+  font-weight: bold;
+  color: #31668e;
+  font-size: 1.5em;
+}
+.historic-entry .mini-header .picto {
+  height: 2em;
+  position: absolute;
+  top: -0.25em;
+  left: -1em;
+}
+.historic-entry dl {
+  font-size: 1.2em;
+  width: 80%;
+  margin: 1em auto;
+  display: block;
+}
+.historic-entry dl dt {
+  font-weight: bold;
+  color: #31668e;
+}
+
+
+/*# sourceMappingURL=app.css.map*/

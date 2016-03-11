@@ -1,0 +1,14 @@
+include ./mixins/page.jade
++page.historic-entry
+  table.mini-header
+    tr
+      td
+        img.picto(src=linkvaluepicto)
+      td= historic.current.company
+      td= historic.current.job
+      td= historic.current.date
+  dl
+    each part, title in historic.current.content
+      dt= title
+      each subelement, i in part
+        dd!= subelement

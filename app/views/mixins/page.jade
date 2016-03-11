@@ -1,0 +1,8 @@
+mixin page
+  .page&attributes(attributes)
+    include ../partials/header.jade
+    if block
+      block
+    else
+      p EMPTY PAGE !
+    include ../partials/footer.jade

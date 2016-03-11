@@ -1,0 +1,24 @@
+{
+  "name": "pss",
+  "description": "",
+  "main": "./public/app.js",
+  "authors": [
+    "Jean-cédric Thérond <jean.cedric.t@gmail.com>"
+  ],
+  "license": "GPL-3.0",
+  "homepage": "https://github.com/kane-thornwyrd/pss",
+  "moduleType": [
+    "node"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jspdf": "^1.2.61"
+  }
+}

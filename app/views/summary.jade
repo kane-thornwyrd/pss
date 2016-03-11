@@ -1,0 +1,12 @@
+include ./mixins/page.jade
++page.summary
+  img.wheel(src=wheelimg)
+  img.picto(src=linkvaluepicto)
+
+  each element, title in summary
+    dl(class="#{title} section")
+      each subClass, subTitle in element
+        dt= subTitle
+        each subsub in subClass
+          dd= subsub
+
